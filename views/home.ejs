@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<h1>name | price</h1>
+<% if (products.length > 0) { %>
+<ul>
+  <% products.forEach(product => { %>
+  <li><%= product.name %>|<%= product.price %> </li>
+  <% }); %>
+</ul>
+<% } else { %>
+<h2>No productes</h2>
+<% } %> <%- include('partials/footer') %>
